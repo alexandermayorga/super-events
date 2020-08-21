@@ -1,5 +1,5 @@
 import React from 'react';
-import "resources/styles.css"
+import "resources/styles.scss"
 import Header from 'components/header_footer/Header'
 import Featured from 'components/Featured/Featured'
 import VenueNfo from 'components/VenueNfo/VenueNfo'

@@ -1,0 +1,12 @@
+//Background Coloring
+.bck_{
+    &black { background: $color-slateGrey;}
+    &white { background: $color-white;}
+    &red { background: $color-red;}
+    &yellow { background: $color-orange;}
+}
+
+.iconImage {
+    width: 20px;
+    margin-right: 10px;
+}

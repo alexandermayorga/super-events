@@ -13,7 +13,7 @@ const SideDrawer = (props) => {
             duration: 1000,
             delay: 75,
             smooth: true,
-            offset: -130, // Scrolls to element + 50 pixels down the page
+            offset: -100, // Scrolls to element + 50 pixels down the page
         })
         props.onClose(false)
     } 

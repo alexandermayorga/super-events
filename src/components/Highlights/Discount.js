@@ -27,6 +27,7 @@ export default class Discount extends Component {
         return (
             <div className="center_wrapper">
                 <div className="discount_wrapper">
+                    
                     <Fade
                         onReveal={this.percentage}
                     >
@@ -35,6 +36,7 @@ export default class Discount extends Component {
                             <span>Off</span>
                         </div>
                     </Fade>
+                    
                     <Slide right>
                         <div className="discount_description">
                             <h3>Purchase Tickets before 20th June</h3>
@@ -49,6 +51,7 @@ export default class Discount extends Component {
                             />
                         </div>
                     </Slide>
+
                 </div>
             </div>
         )

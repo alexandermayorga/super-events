@@ -1,4 +1,8 @@
 .center_wrapper {
-    width: 900px;
+    width: 100%;
     margin:0 auto;
+
+    @include bp_desktop_sm_up{
+        max-width: 900px;
+    }
 }

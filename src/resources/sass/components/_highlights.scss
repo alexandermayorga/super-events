@@ -1,5 +1,6 @@
 
 .highlight_wrapper {
+    padding: 0 15px;
     h2 {
         text-align: center;
         text-transform: uppercase;
@@ -18,24 +19,20 @@
 
 .discount_wrapper {
     display: flex;
-    padding: 70px 0px;
-
-    .discount_percentage {
-        padding-right: 100px;
-    }
-
+    padding: 70px 0;
+    flex-direction: column;
     .discount_percentage {
         span{
             font-weight: 400;
-            display: block;
             &:nth-child(1) {
                 color: $color-red;
-                font-size: 125px;
+                font-size: 7.82rem;
                 line-height: 120px;
+                margin-right: .8rem;
             }
             &:nth-child(2) {
                 color: #2c2c2c;
-                font-size: 50px;
+                font-size: #{(7.82/2)}rem;
                 font-weight: 400;
             }
         }
@@ -45,14 +42,29 @@
         h3 {
             font-size: 34px;
             font-weight: 100;
-            margin: 0px;
             color: #2c2c2c;
-            }
+        }
         p { 
             line-height: 30px;
             font-size: 18px;
             font-weight: 300;
         }
     }
+    @include bp_tablet_up{
+        flex-direction: row;
     
+        .discount_percentage {
+            padding-right: 100px;
+            span{
+                display: block;
+                &:nth-child(1) {
+                    font-size: 9.4rem;
+                    margin-right: 0;
+                }
+                &:nth-child(2) {
+                    font-size: #{(9.4/2)}rem;
+                }
+            }
+        }        
+    }
 }

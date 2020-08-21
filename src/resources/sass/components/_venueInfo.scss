@@ -1,18 +1,36 @@
 .vn_wrapper {
     display: flex;
-    padding: 170px 0px;
+    padding: 150px 0px;
+    flex-direction: column;
+    align-items: center;
+    @include bp_tablet_up{
+        flex-direction: row;
+        padding: 170px 0px;
+    }
 }
 
 .vn_item {
-    width:50%;
+    width:75%;
     color:$color-white;
     text-align: center;
+    @include bp_tablet_up{
+        width:50%;
+    }
+    &:first-child {
+        margin-bottom: 120px;
+        @include bp_tablet_up{
+            margin-bottom: 0;
+        }
+    }
 
     .vn_outer {
-        width: 300px;
+        width: 100%;
         border: 2px solid #828282;
         margin: auto;
         padding: 5px;
+        @include bp_tablet_up{
+            width:300px;
+        }
     }
     .vn_inner { 
         border: 2px solid #828282;
@@ -31,11 +49,17 @@
         width: 100px;
         height: 100px;
         position: absolute;
-        -ms-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
+        transform: translateX(-50%) rotate(45deg);
+        -ms-transform: translateX(-50%) rotate(45deg);
+        -webkit-transform: translateX(-50%) rotate(45deg);
         top: -54px;
-        left: 100px;
+        left: 50%;
+        @include bp_tablet_up{
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            left: 100px;
+        }
     }
     .vn_icon {
         width: 50px;
@@ -44,8 +68,17 @@
         background-repeat: no-repeat !important;
         position: absolute;
         top: -30px;
-        left: 124px;
+        left: 50%;
+        transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         transition: all .25s;
+        @include bp_tablet_up{
+            transform: none;
+            -ms-transform: none;
+            -webkit-transform: none;
+            left: 124px;
+        }
     }
     .vn_title {
         font-size: 28px;
@@ -58,5 +91,7 @@
         font-weight: 300;
         margin-bottom: 90px;
     }
+
+
 
 }

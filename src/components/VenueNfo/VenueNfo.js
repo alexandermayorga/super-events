@@ -22,7 +22,7 @@ const VenueNfo = () => {
                                         }}
                                     ></div>
                                     <div className="vn_title">
-                                        Event Date & Time
+                                        Event Date <br/>& Time
                                     </div>
                                     <div className="vn_desc">
                                         August 7, 2017 @ 10pm
